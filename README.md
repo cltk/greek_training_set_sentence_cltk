@@ -1,4 +1,4 @@
-CLTK Latin sentence tokenizer
+CLTK Greek sentence tokenizer
 =============================
 
 About
@@ -9,7 +9,7 @@ Training sets and and sentence tokenizer for Classical Greek, for use with [Clas
 Use
 ---
 
-For instructions on tokenizing sentences, see [instructions in the CLTK docs](http://docs.cltk.org/en/latest/classical_latin.html#sentence-tokenization).
+For instructions on tokenizing sentences, see [instructions in the CLTK docs](http://docs.cltk.org/en/latest/classical_greek.html#sentence-tokenization).
 
 To create a new training set (steps #1 and 2), do the following within this repository's root directory. Use steps #3 and 4 to test the output.
 
@@ -46,7 +46,7 @@ In [4]: tokenize_sentences('models/xen_anab_1.txt')
 ['Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο, πρεσβύτερος μὲν Ἀρταξέρξης, νεώτερος δὲ Κῦρος: ἐπεὶ δὲ ἠσθένει Δαρεῖος καὶ ὑπώπτευε τελευτὴν τοῦ βίου, ἐβούλετο τὼ παῖδε ἀμφοτέρω παρεῖναι.', 'ὁ μὲν οὖν πρεσβύτερος παρὼν ἐτύγχανε: Κῦρον δὲ μεταπέμπεται ἀπὸ τῆς ἀρχῆς ἧς αὐτὸν σατράπην ἐποίησε, καὶ στρατηγὸν δὲ αὐτὸν ἀπέδειξε πάντων ὅσοι ἐς Καστωλοῦ πεδίον ἁθροίζονται.', 'ἀναβαίνει οὖν ὁ Κῦρος λαβὼν Τισσαφέρνην ὡς φίλον, καὶ τῶν Ἑλλήνων ἔχων ὁπλίτας ἀνέβη τριακοσίους, ἄρχοντα δὲ αὐτῶν Ξενίαν Παρράσιον.', 'ἐπεὶ δὲ ἐτελεύτησε Δαρεῖος καὶ κατέστη εἰς τὴν βασιλείαν Ἀρταξέρξης, Τισσαφέρνης διαβάλλει τὸν Κῦρον πρὸς τὸν ἀδελφὸν ὡς ἐπιβουλεύοι αὐτῷ.', 'ὁ δὲ πείθεται καὶ συλλαμβάνει Κῦρον ὡς ἀποκτενῶν: ἡ δὲ μήτηρ ἐξαιτησαμένη αὐτὸν ἀποπέμπει πάλιν ἐπὶ τὴν ἀρχήν.', 'ὁ δ᾽ ὡς ἀπῆλθε κινδυνεύσας καὶ ἀτιμασθείς, βουλεύεται ὅπως μήποτε ἔτι ἔσται ἐπὶ τῷ ἀδελφῷ, ἀλλά, ἢν δύνηται, βασιλεύσει ἀντ᾽ ἐκείνου.', 'Παρύσατις μὲν δὴ ἡ μήτηρ ὑπῆρχε τῷ Κύρῳ, φιλοῦσα αὐτὸν μᾶλλον ἢ τὸν βασιλεύοντα Ἀρταξέρξην.', 'ὅστις δ᾽ ἀφικνεῖτο τῶν παρὰ βασιλέως πρὸς αὐτὸν πάντας οὕτω διατιθεὶς ἀπεπέμπετο ὥστε αὐτῷ μᾶλλον φίλους εἶναι ἢ βασιλεῖ.', 'καὶ τῶν παρ᾽ ἑαυτῷ δὲ βαρβάρων ἐπεμελεῖτο ὡς πολεμεῖν τε ἱκανοὶ εἴησαν καὶ εὐνοϊκῶς ἔχοιεν αὐτῷ.', 'τὴν δὲ Ἑλληνικὴν δύναμιν ἥθροιζεν ὡς μάλιστα ἐδύνατο ἐπικρυπτόμενος, ὅπως ὅτι ἀπαρασκευότατον λάβοι βασιλέα.', 'ὧδε οὖν ἐποιεῖτο τὴν συλλογήν.', 'ὁπόσας εἶχε φυλακὰς ἐν ταῖς πόλεσι παρήγγειλε τοῖς φρουράρχοις ἑκάστοις λαμβάνειν ἄνδρας Πελοποννησίους ὅτι πλείστους καὶ βελτίστους, ὡς ἐπιβουλεύοντος Τισσαφέρνους ταῖς πόλεσι.', 'καὶ γὰρ ἦσαν αἱ Ἰωνικαὶ πόλεις Τισσαφέρνους τὸ ἀρχαῖον ἐκ βασιλέως δεδομέναι, τότε δὲ ἀφειστήκεσαν πρὸς Κῦρον πᾶσαι πλὴν Μιλήτου: ἐν Μιλήτῳ δὲ Τισσαφέρνης προαισθόμενος τὰ αὐτὰ ταῦτα βουλευομένους ἀποστῆναι πρὸς Κῦρον, τοὺς μὲν αὐτῶν ἀπέκτεινε τοὺς δ᾽ ἐξέβαλεν.', 'ὁ δὲ Κῦρος ὑπολαβὼν τοὺς φεύγοντας συλλέξας στράτευμα ἐπολιόρκει Μίλητον καὶ κατὰ γῆν καὶ κατὰ θάλατταν καὶ ἐπειρᾶτο κατάγειν τοὺς ἐκπεπτωκότας.', 'καὶ αὕτη αὖ ἄλλη πρόφασις ἦν αὐτῷ τοῦ ἁθροίζειν στράτευμα.',
 ```
 
-Now that you have a customized `latin.pickle`, you may copy it to your local CLTK data directory at `~/cltk_data/compiled/sentence_tokens_latin/`. If you think your tokenizer is an improvement upon the CLTK's current, please submit a pull request along with the original training set.
+Now that you have a customized `greek.pickle`, you may copy it to your local CLTK data directory at `~/cltk_data/compiled/sentence_tokens_greek/`. If you think your tokenizer is an improvement upon the CLTK's current, please submit a pull request along with the original training set.
 
 
 Contents
@@ -54,7 +54,7 @@ Contents
 
 `greek.pickle`: the actual sentence tokenizer
 
-`greek.tar.gz`: this is `latin.pickle` and `training_sentences.txt` compressed; what is fetched by the CLTK corpus importer
+`greek.tar.gz`: this is `greek.pickle` and `training_sentences.txt` compressed; what is fetched by the CLTK corpus importer
 
 `models/`: original texts and training sentences
 
@@ -64,6 +64,6 @@ Contents
 
 `training_sentences.txt`: the combined output of the training sentences in `models`
 
-`transformer.py`: a quick and dirty script with which I cleaned up Cicero's *Catalinarians* (12,236 words) into `training_sentences.txt`. In it, each sentences starts a new line
+`transformer.py`: a quick and dirty script with which I cleaned up Xenophon's *Anabasis* (57,173 words) into `training_sentences.txt`. In it, each sentences starts a new line.
 
 
