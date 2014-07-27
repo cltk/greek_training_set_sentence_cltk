@@ -11,9 +11,9 @@ import pickle
 def train_from_file(training_file):
     #PunktLanguageVars
     language_punkt_vars = PunktLanguageVars
-    language_punkt_vars.sent_end_chars=('.', '?', ';', ':')
+    language_punkt_vars.sent_end_chars = ('.', ';',)
     #PunktTrainer
-    language_punkt_vars.internal_punctuation = ','
+    language_punkt_vars.internal_punctuation = (',', ':')
     with open(training_file) as f:
         train_data = f.read()
     #build trainer
@@ -63,7 +63,7 @@ def tokenize_sentences_string(sentences_string):
 def main():
     training_file = 'training_sentences.txt'
     train_from_file(training_file)
-    input_file = 'models/cat1.txt'
+    input_file = 'models/xen_anab_1.txt'
     tokenize_sentences(input_file)
 
 if __name__ == '__main__':

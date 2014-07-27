@@ -17,31 +17,33 @@ To create a new training set (steps #1 and 2), do the following within this repo
 In [1]: from sentence_tokenizer import train_from_file
 
 In [2]: train_from_file('training_sentences.txt')
-  Abbreviation: [0.3366] kal
-  Abbreviation: [2.4870] d
-  Abbreviation: [1.8298] ti
-  Abbreviation: [0.9149] sp
-  Abbreviation: [37.3053] p
-  Abbreviation: [12.4351] q
-  Abbreviation: [47.2533] c
-  Abbreviation: [14.0461] m
-  Abbreviation: [2.4870] t
-  Abbreviation: [47.2533] l
-  Abbreviation: [0.9149] cn
-  Abbreviation: [0.9149] pl
-  Rare Abbrev: fateatur.
-  Rare Abbrev: ingravescet.
-  Rare Abbrev: ceterorum.
-  Sent Starter: [55.7801] 'quodsi'
-  Sent Starter: [40.0581] 'nunc'
-  Sent Starter: [51.3624] 'etenim'
-  Sent Starter: [31.5105] 'itaque'
-  Sent Starter: [63.1264] 'nam'
+  Abbreviation: [0.3255] ἐᾶν
+  Abbreviation: [0.3255] ἔζη
+  Abbreviation: [0.8848] ὄν
+  Sent Starter: [366.4722] 'ὁ'
+  Sent Starter: [32.3856] 'καίτοι'
+  Sent Starter: [54.1370] 'οὐκοῦν'
+  Sent Starter: [338.3707] 'ἐνταῦθα'
+  Sent Starter: [127.1078] 'ἐκ'
+  Sent Starter: [59.5778] 'ἀκούσασ'
+  Sent Starter: [653.2848] 'ἐπεὶ'
+  Sent Starter: [45.2915] 'ταύτην'
+  Sent Starter: [66.8957] 'εἰ'
+  Sent Starter: [47.9663] 'ἀκούσαντεσ'
+  Sent Starter: [230.3898] 'καὶ'
+  Sent Starter: [432.8013] 'ἐντεῦθεν'
+  Sent Starter: [32.3856] 'τοιγαροῦν'
+  Sent Starter: [98.9058] 'ἐπειδὴ'
+  Sent Starter: [116.9693] 'οἱ'
+  Sent Starter: [103.8642] 'ἔνθα'
+  Sent Starter: [58.9851] 'ταῦτα'
+  Sent Starter: [36.9662] 'ἀλλὰ'
+  Sent Starter: [187.9368] 'μετὰ'
 
 In [3]: from sentence_tokenizer import tokenize_sentences
 
-In [4]: tokenize_sentences('models/cat1.txt')
-['Cicero:', 'In Catilinam I\n\t\t \n\n\t\t \n\t\t\n\t\t \n\t\t\n\t\t \n\t\t \n\t \n\t\n \n\n \n\n ORATIO IN L. CATILINAM PRIMA \n\n \n 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 \n \n\n \n[ 1 ] I.', 'Quo usque tandem abutere, Catilina, patientia nostra?', 'quam diu etiam furor iste tuus nos eludet?', 'quem ad finem sese effrenata iactabit audacia?', 'Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt?', 'Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides?', 'Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?', ... ]
+In [4]: tokenize_sentences('models/xen_anab_1.txt')
+['Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο, πρεσβύτερος μὲν Ἀρταξέρξης, νεώτερος δὲ Κῦρος: ἐπεὶ δὲ ἠσθένει Δαρεῖος καὶ ὑπώπτευε τελευτὴν τοῦ βίου, ἐβούλετο τὼ παῖδε ἀμφοτέρω παρεῖναι.', 'ὁ μὲν οὖν πρεσβύτερος παρὼν ἐτύγχανε: Κῦρον δὲ μεταπέμπεται ἀπὸ τῆς ἀρχῆς ἧς αὐτὸν σατράπην ἐποίησε, καὶ στρατηγὸν δὲ αὐτὸν ἀπέδειξε πάντων ὅσοι ἐς Καστωλοῦ πεδίον ἁθροίζονται.', 'ἀναβαίνει οὖν ὁ Κῦρος λαβὼν Τισσαφέρνην ὡς φίλον, καὶ τῶν Ἑλλήνων ἔχων ὁπλίτας ἀνέβη τριακοσίους, ἄρχοντα δὲ αὐτῶν Ξενίαν Παρράσιον.', 'ἐπεὶ δὲ ἐτελεύτησε Δαρεῖος καὶ κατέστη εἰς τὴν βασιλείαν Ἀρταξέρξης, Τισσαφέρνης διαβάλλει τὸν Κῦρον πρὸς τὸν ἀδελφὸν ὡς ἐπιβουλεύοι αὐτῷ.', 'ὁ δὲ πείθεται καὶ συλλαμβάνει Κῦρον ὡς ἀποκτενῶν: ἡ δὲ μήτηρ ἐξαιτησαμένη αὐτὸν ἀποπέμπει πάλιν ἐπὶ τὴν ἀρχήν.', 'ὁ δ᾽ ὡς ἀπῆλθε κινδυνεύσας καὶ ἀτιμασθείς, βουλεύεται ὅπως μήποτε ἔτι ἔσται ἐπὶ τῷ ἀδελφῷ, ἀλλά, ἢν δύνηται, βασιλεύσει ἀντ᾽ ἐκείνου.', 'Παρύσατις μὲν δὴ ἡ μήτηρ ὑπῆρχε τῷ Κύρῳ, φιλοῦσα αὐτὸν μᾶλλον ἢ τὸν βασιλεύοντα Ἀρταξέρξην.', 'ὅστις δ᾽ ἀφικνεῖτο τῶν παρὰ βασιλέως πρὸς αὐτὸν πάντας οὕτω διατιθεὶς ἀπεπέμπετο ὥστε αὐτῷ μᾶλλον φίλους εἶναι ἢ βασιλεῖ.', 'καὶ τῶν παρ᾽ ἑαυτῷ δὲ βαρβάρων ἐπεμελεῖτο ὡς πολεμεῖν τε ἱκανοὶ εἴησαν καὶ εὐνοϊκῶς ἔχοιεν αὐτῷ.', 'τὴν δὲ Ἑλληνικὴν δύναμιν ἥθροιζεν ὡς μάλιστα ἐδύνατο ἐπικρυπτόμενος, ὅπως ὅτι ἀπαρασκευότατον λάβοι βασιλέα.', 'ὧδε οὖν ἐποιεῖτο τὴν συλλογήν.', 'ὁπόσας εἶχε φυλακὰς ἐν ταῖς πόλεσι παρήγγειλε τοῖς φρουράρχοις ἑκάστοις λαμβάνειν ἄνδρας Πελοποννησίους ὅτι πλείστους καὶ βελτίστους, ὡς ἐπιβουλεύοντος Τισσαφέρνους ταῖς πόλεσι.', 'καὶ γὰρ ἦσαν αἱ Ἰωνικαὶ πόλεις Τισσαφέρνους τὸ ἀρχαῖον ἐκ βασιλέως δεδομέναι, τότε δὲ ἀφειστήκεσαν πρὸς Κῦρον πᾶσαι πλὴν Μιλήτου: ἐν Μιλήτῳ δὲ Τισσαφέρνης προαισθόμενος τὰ αὐτὰ ταῦτα βουλευομένους ἀποστῆναι πρὸς Κῦρον, τοὺς μὲν αὐτῶν ἀπέκτεινε τοὺς δ᾽ ἐξέβαλεν.', 'ὁ δὲ Κῦρος ὑπολαβὼν τοὺς φεύγοντας συλλέξας στράτευμα ἐπολιόρκει Μίλητον καὶ κατὰ γῆν καὶ κατὰ θάλατταν καὶ ἐπειρᾶτο κατάγειν τοὺς ἐκπεπτωκότας.', 'καὶ αὕτη αὖ ἄλλη πρόφασις ἦν αὐτῷ τοῦ ἁθροίζειν στράτευμα.',
 ```
 
 Now that you have a customized `latin.pickle`, you may copy it to your local CLTK data directory at `~/cltk_data/compiled/sentence_tokens_latin/`. If you think your tokenizer is an improvement upon the CLTK's current, please submit a pull request along with the original training set.
