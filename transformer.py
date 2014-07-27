@@ -11,7 +11,7 @@ except:
     pass
 '''
 
-with open('models/xen_anab_1.txt') as f:
+with open('models/xen_anab_7.txt') as f:
     read = f.read()
 rm_brackets = re.sub(r'\[\d+?\]', '', read)
 rm_nums = re.sub(r'\d+?\.', '', rm_brackets)
@@ -23,5 +23,5 @@ add_punct_breaks = re.sub(r'(\.|;) ', r'\1\n', rm_breaks)
 print(add_punct_breaks)
 
 
-with open('models/training_sentences_anab1.txt', 'w') as f:
+with open('models/training_sentences_anab7.txt', 'w') as f:
     f.write(add_punct_breaks)
