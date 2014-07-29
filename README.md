@@ -67,3 +67,8 @@ Contents
 `transformer.py`: a quick and dirty script with which I cleaned up Xenophon's *Anabasis* (57,173 words) into `training_sentences.txt`. In it, each sentences starts a new line.
 
 
+LICENSE
+-------
+This software is, like the rest of the CLTK, licensed under the MIT license (see LICENSE).
+
+The texts included in `models/` come [from Perseus](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.01.0201) and are licensed under the [Creative Commons Attribution-ShareAlike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/).
