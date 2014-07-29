@@ -13,7 +13,7 @@ def train_from_file(training_file):
     language_punkt_vars = PunktLanguageVars
     language_punkt_vars.sent_end_chars = ('.', ';',)
     #PunktTrainer
-    language_punkt_vars.internal_punctuation = (',', ':')
+    language_punkt_vars.internal_punctuation = (',', '·')
     with open(training_file) as f:
         train_data = f.read()
     #build trainer
