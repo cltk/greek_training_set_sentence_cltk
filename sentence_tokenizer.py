@@ -33,7 +33,7 @@ def tokenize_sentences(input_file):
     sbd = PunktSentenceTokenizer(params)
     with open(input_file) as f:
         to_be_tokenized = f.read()
-    tokenenized_sentences = []
+    tokenized_sentences = []
     for sentence in sbd.sentences_from_text(to_be_tokenized, realign_boundaries=True):
         tokenized_sentences.append(sentence)
     #file_output_name = 'sentences_tokenized_' + input_file
