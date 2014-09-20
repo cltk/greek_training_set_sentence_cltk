@@ -35,11 +35,11 @@ def tokenize_sentences(input_file):
         to_be_tokenized = f.read()
     tokenenized_sentences = []
     for sentence in sbd.sentences_from_text(to_be_tokenized, realign_boundaries=True):
-        tokenenized_sentences.append(sentence)
+        tokenized_sentences.append(sentence)
     #file_output_name = 'sentences_tokenized_' + input_file
     with open('tokenized_output.txt', 'w') as f:
-        f.write(str(tokenenized_sentences))
-    print(tokenenized_sentences)
+        f.write(str(tokenized_sentences))
+    print(tokenized_sentences)
 
 def tokenize_sentences_string(sentences_string):
     '''
@@ -56,10 +56,10 @@ def tokenize_sentences_string(sentences_string):
     train_data.INCLUDE_ABBREV_COLLOCS = True
     params = train_data.get_params()
     sbd = PunktSentenceTokenizer(params)
-    tokenenized_sentences = []
+    tokenized_sentences = []
     for sentence in sbd.sentences_from_text(sentences_string, realign_boundaries=True):
-        tokenenized_sentences.append(sentence)
-    return tokenenized_sentences
+        tokenized_sentences.append(sentence)
+    return tokenized_sentences
 
 
 #for debugging
