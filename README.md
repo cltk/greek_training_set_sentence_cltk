@@ -11,7 +11,7 @@ Use
 
 For instructions on tokenizing sentences, see [instructions in the CLTK docs](http://docs.cltk.org/en/latest/classical_greek.html#sentence-tokenization).
 
-To create a new training set (steps #1 and 2), do the following within this repository's root directory. Use steps #3 and 4 to test the output.
+To create a new training set, do the following steps #1 and 2 within this repository's root directory. Use steps #3 and 4 to test the output.
 
 ```python
 In [1]: from sentence_tokenizer import train_from_file
@@ -52,9 +52,9 @@ Now that you have a customized `greek.pickle`, you may copy it to your local CLT
 Contents
 --------
 
-`greek.pickle`: the actual sentence tokenizer
+`greek.pickle`: the rule set used by the sentence tokenizer
 
-`greek.tar.gz`: this is `greek.pickle` and `training_sentences.txt` compressed; what is fetched by the CLTK corpus importer
+`greek.tar.gz`: this is `greek.pickle` and `training_sentences.txt` compressed, and what is fetched by the CLTK corpus importer
 
 `models/`: original texts and training sentences
 
@@ -71,4 +71,4 @@ LICENSE
 -------
 This software is, like the rest of the CLTK, licensed under the MIT license (see LICENSE).
 
-The texts included in `models/` come [from Perseus](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.01.0201) and are licensed under the [Creative Commons Attribution-ShareAlike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/).
+    The texts included in `models/` come [from Perseus](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.01.0201) and are licensed under the [Creative Commons Attribution-ShareAlike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/).
