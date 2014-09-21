@@ -15,13 +15,16 @@ def train_from_file(training_file):
     language_punkt_vars = PunktLanguageVars
     language_punkt_vars.sent_end_chars = ('.', ';',)
     language_punkt_vars.internal_punctuation = (',', '·')
-    with open(training_file) as f:
-        train_data = f.read()
+    with open(training_file) as opened_training_file:
+        train_data = opened_training_file.read()
     trainer = PunktTrainer(train_data, language_punkt_vars)
-    with open('greek.pickle', 'wb') as f:
-        pickle.dump(trainer, f)
+    with open('greek.pickle', 'wb') as open_pickle_file:
+        pickle.dump(trainer, open_pickle_file)
 
-if __name__ == '__main__':
+def main():
     """For debugging."""
     training_file = 'training_sentences.txt'
     train_from_file(training_file)
+
+if __name__ == '__main__':
+    main()
