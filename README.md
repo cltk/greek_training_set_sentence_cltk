@@ -3,13 +3,15 @@ CLTK Greek sentence tokenizer
 
 About
 -----
-Training sets and sentence tokenizer for Classical Greek, for use with the [Classical Language Toolkit](https://github.com/kylepjohnson/cltk). Unless you want to create a new training set for Greek sentences, there is nothing you need from this repository.
+This repository contains a training set and rule set for tokenizing sentences for Classical Greek, for use with the [Classical Language Toolkit](https://github.com/kylepjohnson/cltk). Unless you want to create a new training set for Greek sentences, there is nothing you need from this repository.
 
-To tokenize Greek sentences with the CLTK, first [import it and use according to the docs here](http://docs.cltk.org/en/latest/import_corpora.html) and then see [instructions on tokenizing Greek sentences](http://docs.cltk.org/en/latest/classical_greek.html#sentence-tokenization).
+To tokenize Greek sentences with the CLTK, first [import it and use according to the docs here](http://docs.cltk.org/en/latest/import_corpora.html#cltk-sentence-tokenizer-greek) and then see [instructions on tokenizing Greek sentences](http://docs.cltk.org/en/latest/classical_greek.html#sentence-tokenization).
+
+`training_sentences.txt` is comprised of the entirety of the Xenophon's *Anabasis* and is 57,173 words long.
 
 Use
 ---
-To create a new training set, manually add tokenized sentences (with each sentence starting a new line) to `training_sentences.txt` and run `train_sentence_tokenizer.py`. The script outputs `greek.pickle`. To use this new file, copy it to your local CLTK data directory at `~/cltk_data/compiled/sentence_tokens_greek/`. If you think your training set and tokenizer is an improvement over the CLTK's current, please submit a pull request.
+To create a new training set, manually add tokenized sentences (with each sentence starting a new line) to `training_sentences.txt` and run `train_sentence_tokenizer.py`. The script outputs `greek.pickle`. To use this new file, copy it to your local CLTK data directory at `~/cltk_data/compiled/sentence_tokens_greek/`.
 
 ```shell
 $ python train_sentence_tokenizer.py 
@@ -37,6 +39,8 @@ $ python train_sentence_tokenizer.py
   Sent Starter: [429.5321] 'ἐντεῦθεν'
 ```
 
+If you think your training set and tokenizer is an improvement over the CLTK's current, please submit a pull request.
+
 LICENSE
 -------
-This software is, like the rest of the CLTK, licensed under the MIT license (see LICENSE). The texts included in `models/` come [from Perseus](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.01.0201) and are licensed under the [Creative Commons Attribution-ShareAlike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/).
+This software is, like the rest of the CLTK, licensed under the MIT license (see LICENSE). The texts for the training sentences comes [from Perseus](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.01.0201) and are licensed under the [Creative Commons Attribution-ShareAlike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/).
